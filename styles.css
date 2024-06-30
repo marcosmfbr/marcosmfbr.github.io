@@ -1,0 +1,174 @@
+/* Reset básico e configurações globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Gradiente de fundo */
+    background: linear-gradient(to right, #3e2c5e, #ff5555);
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Estilos adicionais para o corpo */
+    color: #000000; /* Cor do texto principal */
+    line-height: 1.6; /* Espaçamento entre linhas do texto */
+    margin: 0; /* Remover margens padrão */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, #30204b, #c42f2f);
+    padding: 50px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 5em;
+    text-align: center;
+    color: #000000;
+    padding: 5px;
+    -webkit-text-stroke: 0.5px #adabab; /* Contorno branco de 1 pixel */
+    text-stroke: 1px #adabab; /* Contorno branco de 1 pixel */
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.9);
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* Seções */
+.section {
+    padding: 60px 0;
+    text-align: center;
+    
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #000000;
+    -webkit-text-stroke: 0.5px #adabab; /* Contorno branco de 1 pixel */
+    text-stroke: 1px #adabab; /* Contorno branco de 1 pixel */
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.9);
+}
+}
+
+/* Ajustes para uma coluna única */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Portfolio */
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.0s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(5.0);
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.portfolio-item p {
+    color: #000000;
+}
+
+/* Formulário de Contato */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #000000;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
